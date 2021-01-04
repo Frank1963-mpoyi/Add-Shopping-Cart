@@ -108,4 +108,44 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+
 STATIC_URL = '/static/'
+STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS =[
+    os.path.join(BASE_DIR, 'static')
+]
+
+
+MEDIA_URL='/media/' 
+MEDIA_ROOT= os.path.join(BASE_DIR, 'media')# for production 
+
+#CRISPY_TEMPLATE_PACK ='bootstrap4'
+#LOGIN_REDIRECT_URL = 'home_view' 
+#LOGIN_URL ='login' 
+
+
+# Internal Ip for Debug tool bar
+# INTERNAL_IPS = ['127.0.0.1']
+# if not DEBUG:
+#     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#     EMAIL_HOST_USER = 'frankmpoyi63@gmail.com' 
+#     EMAIL_HOST = 'smtp.gmail.com'
+#     EMAIL_PORT = 587
+#     EMAIL_USE_TLS = True
+#     EMAIL_HOST_PASSWORD = 'Paulin63@mpoyi' 
+
+# else:
+#     EMAIL_BACKEND = (
+#         "django.core.mail.backends.console.EmailBackend"
+#     )
+
+
+
+#white Noise
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# django_heroku.settings(locals())# need to import this package
+
+
+
